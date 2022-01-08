@@ -1,14 +1,14 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCat } from '@fortawesome/free-solid-svg-icons'
-import React from "react";
 
 export const TopBar = () => {
 
   return (
     <>
-        <h1>
-            <FontAwesomeIcon icon={faCat} /> CatWiki
-        </h1>
+      <header className="flex content-end text-3xl mb-4 justify-center">
+        <FontAwesomeIcon icon={faCat} />
+        <h1 className="ml-1">CatWiki</h1>
+      </header>
     </>
   );
 };
